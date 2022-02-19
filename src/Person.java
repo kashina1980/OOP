@@ -51,9 +51,7 @@ public class Person {
     }
 
     public int getAge() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(toString() + " укажите свой возраст:");
-        return age = scanner.nextInt();
+        return age;
     }
 
     public void setAge(int age) {
