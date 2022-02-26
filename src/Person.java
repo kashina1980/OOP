@@ -18,7 +18,7 @@ public class Person {
         System.out.println("Имя: " + name);
     }
 
-    public int YearBirth() {
+    public int getYearBirth() {
         LocalDate currentDate = LocalDate.now();
         int currentYear = currentDate.getYear();
         return currentYear - age;
@@ -34,17 +34,13 @@ public class Person {
         }
     }
 
-    public String getMiddleName() {
-        return middleName;
-    }
+    public String getMiddleName() { return middleName; }
 
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
 
-    public String getFamilyName() {
-        return familyName;
-    }
+    public String getFamilyName() {return familyName;}
 
     public void setFamilyName(String familyName) {
         this.familyName = familyName;

@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 public class Main {
+    private static String[] args;
+
     public static void main(String[] args) {
+        Main.args = args;
         Scanner scanner = new Scanner(System.in);
 
         Person person1 = new Person("Иван", "Петрович", "Сидоров");
@@ -17,7 +20,7 @@ public class Main {
         System.out.println(person2+ " укажите свой возраст:");
         person2.setAge(scanner.nextInt());
 
-        System.out.println(person2 + " родилась в " + person2.YearBirth() + " году");
+        System.out.println(person2 + " родилась в " + person2.getYearBirth() + " году");
 
     }
 }
